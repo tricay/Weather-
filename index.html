@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width ,initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles/layout-color.css"/>
+  <title>zanyengo.app</title>
+</head>
+<body>
+  
+  <main>
+    
+  <div id="menuBox" >
+    <button id="menu"><strong>☰</strong></button>
+    <ul id="impor" class="hide">
+      <li><a class="tabs active" data-target="weatherContent" href="#weatherContent">weather</a></li>
+      <li><a class="tabs" data-target="motivationContent"  href="#motivationContent">quotes</a></li>
+      <li><a class="tabs" data-target="aboutContent"  href="#aboutContent">About</a></li>
+      <li><a class="tabs" data-target="helpContent"  href="#helpContent">Help<i class="fa-solid fa-question"></i></a></li>
+    </ul>
+  </div>
+  <div id="timer"> 
+    <p id="right"><i class="fa-solid fa-calendar"></i><span id="date"></span></p> <p id="left"><i class="fa-solid fa-clock"></i><span id="time"></span></p>
+  </div>
+    
+  <div id="weatherContent" class="holder active">
+    <div id="searchHolder">
+    <input type="search" id="searchPlace" placeholder="search location">
+    <i class="fa-solid fa-search" id="searchIcon"></i>
+    </div>
+    <br>
+    <p id="searchError"></p>
+    <i class="fa fa-location"></i><label for="location"><b>Location:</b></label>
+    <span id="location"></span>
+    <br>
+    <div id="shower">
+            <section>
+    <p>Today</p>
+    <img id="currentIcon"  height="90" width="80" alt="today's condition">
+    <br>
+    <i class="fa fa-thermometer"></i><label for="temp"><b>Temp:</b></label>
+    <span id="temp"></span>
+    <br>
+    <label for="climate"><b>Condition:</b></label>
+    <span id="climate"></span>
+    <br>
+    <p id="errorOne"></p>
+    </section>
+      <section>
+    <p>Tomorrow</p>
+    <img id="forecastIcon" height="90" width="80" alt="tomorrow's condition">
+    <br>
+    <i class="fa fa-thermometer"></i><label for="temp"><b>Temp:</b></label>
+    <span id="tempTwo"></span>
+    <br>
+    <label for="climateTwo"><b>Condition:</b></label>
+    <span id="climateTwo"></span>
+    <br>
+    <p id="errorTwo"></p>
+    </section>
+    </div> 
+    <button id="getWeather">USE LOCAL POSITION</button>
+     </div> 
+
+
+      <div id="motivationContent" class="holder">
+    <h2 id="day">Quote of the Day</h2>
+     
+      <p id="quote">press Get Quote!</p>
+     
+    <label for="author"><b>By:</b></label>
+    <span id="author"></span>
+    <br>
+    <button id="getQuote">Get-Quote</button>
+      </div>
+
+
+     <div id="aboutContent" class="holder">
+      <h3>ABOUT</h3>
+      <h4>ZANYENGO-APP V.0.0.1(beta)</h4>
+      <p>This is a mobile-application that helps to get weather from all areas and locations in the world 
+        .It is developed with passion by a first year student at the university of Malawi(UNIMA).
+      </p>
+      <p>It is developed to help to help people plan their day to day activities. It also have a motivation section
+        part, where daily random qoutes are displayed.</p>
+     </div>
+
+
+     <div id="helpContent" class="holder">
+      <p>welcome to the help section.</p>
+      <h4>how to get local weather?</h4>
+      <p>In the weather section, press on the <b>use local position</b> button </p>
+      <h4>how to search for weather of a specific city ?</h4>
+      <P>In the weather section type the name of city in the input field then search</P>
+      <h4>send feedback</h4>
+      <p>send feedback to the developer <i class="fab fa-whatsapp"></i><b>+265886863962</b></p>
+     </div>
+  
+</main> 
+  <footer>
+    <a href="https://patricknyasulu.netlify.app">ABOUT THE DEV<i class="fas fa-external-link-alt"></i></a>
+    <p>zanyengo-app v.0.0.1(beta)&copy;,<span id="year"></span> </p>
+    <p>All rights reserved.</p>
+  </footer>
+  
+  <script src="scripts/timeZone.js"></script>  
+  <script src="scripts/API.js"></script>
+  <script src="scripts/structure.js"></script>
+    
+</body>
+</html>

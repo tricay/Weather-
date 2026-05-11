@@ -1,0 +1,181 @@
+html,
+body{
+  height: 100%;
+  margin: 0;
+}
+
+body{
+  display: flex;
+  flex-direction: column;  
+  min-height: 100vh;
+  margin: 1px;
+  margin: 10px auto ;
+  padding: 10px 20px;
+  font-size: 17px;
+  gap: 10px;
+  background-image: linear-gradient(transparent, aliceblue, transparent);
+}
+main{
+  flex: 1;
+}
+.hide{
+  display: none;
+}
+
+#timer{
+  top: 0%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  color: blue ;
+  text-align: center;
+  gap: 90px;
+}
+
+#quote{
+  font-family: 'dance vibe', cursive;
+}
+
+#left{
+  text-align: right;
+}
+.holder{
+  display: none;
+  margin: 10px 20px ;
+  border: ridge 3px black;
+  border-radius:  8px;
+  box-shadow: 0 0 12px black;
+  padding: 20px 20px;
+  background-image: radial-gradient(transparent, lightblue);
+}
+
+.holder.active{
+  display: block;
+} 
+
+
+
+.tabs.active{
+  display: block;
+  background:rgb(168, 63, 137);
+  color: black;
+  box-shadow: 0 0 2px rgb(173, 55, 55);
+}
+
+#shower{
+  display: flex;
+  float: left;
+  gap: 20px;
+  font-size: 15px;
+}
+
+input{
+  border: solid 2px black;
+  border-radius: 7px;
+  width: 90%;
+  height: 20px;
+  color: blue;
+}
+
+#getWeather{
+  background-image: linear-gradient(to right, brown, transparent, lightblue);
+  color: darkblue;
+  font-size: 15px;
+  width: 200px;
+  margin: 0 auto;
+  height: 30px;
+  
+}
+
+#selectorBar button:active{
+  background: red;
+}
+button{
+  display: block;
+  border: 2px black solid;
+  width: 120px;
+  height:  30px;
+  margin: 0 auto;
+  place-item: center;
+  padding: 5px 3px;
+  background-image: linear-gradient(to top, transparent, brown, lightblue);
+  align-items: center;
+  border-radius: 15px;
+  color: antiquewhite ;
+  box-shadow: 2px 2px 5px red;
+}
+#menuBox{
+  margin: 0 2px;
+  border: solid rgb(43, 12, 12) 1px;
+  justify-content: left; 
+  padding: 1px 1px;
+  position: fixed;
+  top:0%;
+  left: 0%;
+  background:rgb(40, 129, 145);
+  border-radius: 2px 3px;
+  }
+
+  #menuBox button{
+    justify-content: left;
+    border: white;
+    border-radius: 1px;
+    background: white;
+    box-shadow: white 2px 2px 5px;
+    color: black;
+  } 
+
+ #impor{
+  
+  justify-items: left;  
+  list-style: none;
+  margin: 0px 6px;
+  } 
+ #impor li{
+   border: solid 1px black;
+  border-radius: 2px;
+  /*font-weight: strong;*/
+  background: rgb(114, 4, 46);
+ }
+ #impor li a{
+    text-decoration: none;
+    color:rgb(164, 212, 221);
+ }
+
+footer {
+  margin-top: auto;
+  
+  margin: 20px 2px;
+  padding: 2px ;
+  text-align: center;
+}
+
+footer a {
+  
+  color: brown ;
+  border: solid skyblue 2px;
+  padding: 10px 10px;
+  border-radius: 6px;
+  background: lightcyan;
+  margin: 25px auto;
+  text-decoration: none;
+  box-shadow: 2px 3px 2px black;
+}
+
+@keyframes fadein{
+  0%{
+    opacity: 0;
+    blur: 10px;
+  }
+  30%{
+    opacity: 0.5;
+    blur: 6px;
+    }
+   70%{
+    opacity: 0.8;
+    blur: 2px;
+   } 
+   100%{
+    opacity: 1;
+   }
+}
